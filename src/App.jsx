@@ -47,7 +47,17 @@ useEffect(() => {
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route path="/" element={<Home />} />
+               
+<Route
+    path="/"
+    element={
+        <Home
+            favourites={favourites}
+            addFavourite={addFavourite}
+        />
+    }
+/>
+
                 <Route
                     path="/recipes"
                     element={
